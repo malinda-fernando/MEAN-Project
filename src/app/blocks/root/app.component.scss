@@ -1,0 +1,27 @@
+
+header{
+a{
+    margin:7px; 
+}
+.active-link{
+    background-color:rgb(36, 5, 114);
+}
+
+.logo{
+    background-image: url('../../../assets/logo.png');
+    height: 90px;
+    width: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 12px;
+    left: 30;
+    margin-right: 0.2em;
+}
+ .mat-icon{
+    vertical-align: middle;
+    margin: 0 5px;
+ }
+}
+

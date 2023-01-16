@@ -1,0 +1,20 @@
+.mat-icon {
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.logo{
+    background-image: url('../../../assets/logo.png');
+    height: 80px;
+    width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.2em;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.header-spacer{
+    flex: 1 1 auto;
+}
