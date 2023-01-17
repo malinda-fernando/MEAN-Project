@@ -40,17 +40,19 @@
         </tr>
         <tr>
           <td>
-            <mat-error *ngIf="error">{{error}}</mat-error>
+            <mat-error *ngIf="error">{{error | async}}</mat-error>
           </td>
         </tr>
       </table>
     </form>
     </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button color="primary" (click)="login()">Login</button>
-    <span style="margin-left: 15px;"> If you don't have an account? <a [routerLink]="['/auth/register']">register</a>
+    <button class="full-width" mat-raised-button color="primary" (click)="login()"[tabIndex]="0">Login</button>
+   <div style="margin-top:2em">
+   <span style="margin-left: 15px;"> New to Sneaker Store? <a [routerLink]="['/auth/register']">Sign up</a>
     here.
   </span>
+</div>
   </mat-card-actions>
 </mat-card>
 </body>
