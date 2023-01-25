@@ -23,8 +23,8 @@ export class RegisterComponent implements OnInit {
    }
    passwordMatch(control: FormControl){
     const password = control.root.get('password');
-    return password && control.value !== password.value
-     ?{
+     return password && control.value !== password.value?
+    {
       passwordMatch: true
      }
      : null;
@@ -36,7 +36,7 @@ export class RegisterComponent implements OnInit {
     const user = this.userForm.getRawValue();
      this.authService  
      .register(user)
-     .subscribe(s => this.router.navigate(['/login']));
+     .subscribe(s=>this.router.navigate(['/']));
   }
   get fullname(){
     return this.userForm.get('fullname');

@@ -1,10 +1,10 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { Observable } from 'rxjs';
 import { ProductsDataService } from '@core/index';
 import { MatTableDataSource } from '@angular/material/table';
 import { Product } from '@core/products/product';
 import { MatSort } from '@angular/material/sort';
 import { MatPaginator } from '@angular/material';
+import { CartService } from '@core/cart/cart.service';
 @Component({
   selector: 'pm-products',
   templateUrl: './products.component.html',
@@ -13,7 +13,7 @@ import { MatPaginator } from '@angular/material';
 export class ProductsComponent implements OnInit, OnDestroy {
   dataSource = new MatTableDataSource<Product>();
   loading = true;
-  subcriptions = [];
+  subscriptions = [];
   displayedColumns = ['imgUrl', 'name', 'price', 'action'];
 
   @ViewChild(MatSort) sort : MatSort;
@@ -21,22 +21,26 @@ export class ProductsComponent implements OnInit, OnDestroy {
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
 
-  constructor(private productDataService: ProductsDataService) { }
+  constructor(private productDataService: ProductsDataService, private cartService: CartService) { }
 
   ngOnInit() {
-    this.subcriptions.push(
+    this.subscriptions.push(
        this.productDataService.getAllProducts()
        .subscribe((products) => this.onDataLoad(products))
        );
   }
-9
+
   applyFilter(filterValue: string){
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
   ngOnDestroy() {
-    this.subcriptions.forEach(s => s.unsubscribe());
-    9
+    this.subscriptions.forEach(s => s.unsubscribe());
+    
+  }
+
+  addItemToCart(product){
+    this.cartService.addToCart(product, 2);
   }
   onDataLoad(products:Product[])  {
     this.loading = false;

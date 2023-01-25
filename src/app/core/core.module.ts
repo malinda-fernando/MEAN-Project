@@ -6,6 +6,7 @@ import { throwIfAlreadyLoaded } from './utils/module-import-guard';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthHeaderInterceptorService } from './interceptors/auth-header-interceptor.service';
 import { SharedModule } from '../shared/shared.module';
+import { HttpErrorInterceptorService } from './interceptors/http-header-interceptor.service';
 
 @NgModule({
   declarations: [],
@@ -14,6 +15,12 @@ import { SharedModule } from '../shared/shared.module';
       provide: HTTP_INTERCEPTORS,
       useClass: AuthHeaderInterceptorService,
       multi:true
+    },
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass:HttpErrorInterceptorService,
+      multi:true
+
     }
   ],
   imports: [

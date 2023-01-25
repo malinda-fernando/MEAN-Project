@@ -1,6 +1,8 @@
 .example-card {
     max-width: 100%;
-    height: 147%;
+    height: 140%;
+    border-radius: 0%;
+    background-color: #b9ada1ef;
   }
   .full-width{
     width: 100%;
@@ -9,15 +11,17 @@
   .mat-table{
     box-shadow: none;
     width: 100%;
+
+    background-color:#b9ada1ef;
   }
 
   .mat-cell{
-    padding: 8px 8px 8px 0;
+    padding: 1px 1px 1px 0;
   }
 
   .product-listing-image{
     height: 20em;
-    width: 15em;
+    width: 25em;
   }
 
   @media all and (max-width:699px){
@@ -26,9 +30,12 @@
       width: 7em;
     }
   }
-
-    
+ 
     .mat-spinner{
       margin: 10% auto;
     }
   
+  
+  
+
+

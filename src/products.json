@@ -1,33 +1,81 @@
 [
     {
-      "imgUrl": "https://media.wired.com/photos/63728604691ed08cc4b98976/master/pass/Nike-Swoosh-News-Gear.jpg",
-      "name": "CHECK PRINT SHIRT",
-      "price": 110,
+      "imgUrl": "./assets/1-removebg-preview.png",
+      "name": "Yeezy-350 Sneaker",
+      "price": 37000,
       "id": 1
     },
     {
-      "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
-      "name": "GLORIA HIGH LOGO SNEAKER",
-      "price": 91,
+      "imgUrl": "./assets/1yeezy-removebg-preview.png",
+      "name": "YEEZY BOOST 700 'WAVE RUNNER'",
+      "price": 35000,
       "id": 2
     },
     {
-      "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
-      "name": "CATE RIGID BAG",
-      "price": 94.5,
+      "imgUrl": "./assets/images__5_-removebg-preview.png",
+      "name": "Suede Chelesea  Boots",
+      "price": 22000,
       "id": 3
     },
+   
     {
-      "imgUrl": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
-      "name": "GUESS CONNECT WATCH",
-      "price": 438.9,
+      "imgUrl": "./assets/images-removebg-preview.png",
+      "name": "Nike Sports Shoes",
+      "price": 23890,
       "id": 4
     },
     {
-      "imgUrl": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
-      "name": "'70s RETRO GLAM KEFIAH",
-      "price": 20,
+      "imgUrl": "./assets/osi_pimg_oldskool_bkwh_0-removebg-preview (1).png",
+      "name": "Vans Old School",
+      "price": 20000,
       "id": 5
+    },
+    {
+      "imgUrl": "./assets/air-force-1-mid-react-shoes-removebg-preview.png",
+      "name": "Air Force 1 mid react shoes",
+      "price": 15800,
+      "id": 6
+    },
+    {
+      "imgUrl": "./assets/ma-removebg-preview.png",
+      "name": "Puma Sneaker",
+      "price": 21000,
+      "id": 7
+    },
+    {
+      "imgUrl": "./assets/images__1_-removebg-preview.png",
+      "name": "Nike Air Force1",
+      "price": 18000,
+      "id": 8
+    },
+    
+    {
+      "imgUrl": "./assets/supreme-nike-sb-dunk-low-black-dh3228-102-removebg-.png",
+      "name": "Supreme-Nike dunk-low Back",
+      "price": 12000,
+      "id": 9
+    },
+
+    {
+      "imgUrl": "./assets/puma1-removebg-preview.png",
+      "name": "Star Vital Men's Training shoes",
+      "price": 7500,
+      "id": 10
+    },
+    {
+      "imgUrl": "./assets/felipepelaquim-6zO5VKogoZE-unsplash-removebg-preview.png",
+      "name": "FelipepelaquiM Gucci Shoe ",
+      "price": 28000,
+      "id": 11
+    },
+    {
+      "imgUrl": "./assets/conversi-removebg-preview.png",
+      "name": "Converse Chuk 70 ",
+      "price": 12000,
+      "id": 12
     }
+    
+
+    
   ]
    

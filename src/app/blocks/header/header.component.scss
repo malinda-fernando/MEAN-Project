@@ -1,17 +1,23 @@
+.example-toolbar{
+    background-color: #0d0d0e;
+    font-size:25px
+}
+
 a{
     margin: 2px;
 }
 
+.active-link{
+    background-color:rgb(111, 116, 121) ;
+}
+
 .logo{
-    background-image: url('../../../assets/logo.png');
-    height: 80px;
-    width: 80px;
+    background-image: url('../../../assets/logo-no-background.png');
+    height: 75px;
+    width:90px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 0.2em;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .header-spacer{
@@ -23,3 +29,12 @@ a{
     margin: 0 5px;
 }
 
+.logout-button{
+    background-color: #b9ada1ef;
+}
+.pm-title{
+    margin-left: 0.1em;
+}
+.prod-button{
+    margin-left: 10px;
+}

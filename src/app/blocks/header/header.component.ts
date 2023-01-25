@@ -16,8 +16,7 @@ user: User;
 logoutEvent = new EventEmitter<any>();
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 logout(){
   this.logoutEvent.emit();
 }

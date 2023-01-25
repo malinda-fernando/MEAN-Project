@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuardService } from '@core/auth/auth.guard.service';
 
 
 const routes: Routes = [
@@ -19,6 +20,11 @@ redirectTo:'products'
   {
     path:'auth',
     loadChildren: './auth/auth.module#AuthModule'
+  },
+  {
+    path:'cart',
+    loadChildren:"./cart/cart.module#CartModule",
+    canActivate: [AuthGuardService]
   }
   
 

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegisterComponent } from './register.component';
+import { AddToCartDialogComponent } from './add-to-cart-dialog.component';
 
-describe('RegisterComponent', () => {
-  let component: RegisterComponent;
-  let fixture: ComponentFixture<RegisterComponent>;
+describe('AddToCartDialogComponent', () => {
+  let component: AddToCartDialogComponent;
+  let fixture: ComponentFixture<AddToCartDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegisterComponent ]
+      declarations: [ AddToCartDialogComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RegisterComponent);
+    fixture = TestBed.createComponent(AddToCartDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

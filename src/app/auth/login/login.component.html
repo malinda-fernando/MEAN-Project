@@ -1,7 +1,7 @@
-<body>
+<body class="login-body" background="../../../assets/sneakerheads-feature.jpg" >
 <mat-card class = "login-card">
   <mat-card-header>
-    <mat-card-title>Login</mat-card-title>
+    <mat-card-title class="login-card-title"><u>Login</u></mat-card-title>
     </mat-card-header>
   <mat-card-content>
     <form> 
@@ -10,7 +10,6 @@
         <tr>
           <td>
             <mat-form-field  class="full-width" >
-              <mat-label>Email</mat-label>
               <input 
               name="email" 
               [(ngModel)]="email" 
@@ -24,8 +23,7 @@
         </tr>
         <tr>
           <td>
-            <mat-form-field class="full-width"   >
-              <mat-label>Password</mat-label>
+            <mat-form-field class="full-width">
               <input 
               name="password" 
               [(ngModel)]="password" 
@@ -47,12 +45,10 @@
     </form>
     </mat-card-content>
   <mat-card-actions>
-    <button class="full-width" mat-raised-button color="primary" (click)="login()"[tabIndex]="0">Login</button>
-   <div style="margin-top:2em">
-   <span style="margin-left: 15px;"> New to Sneaker Store? <a [routerLink]="['/auth/register']">Sign up</a>
+    <button  mat-raised-button color="primary" (click)="login()" class="login-button" [tabIndex]=0>Login</button>
+   <span style="margin-left: 15px;"> New to Sneaker Store? <a [routerLink]="['/auth/register']" style="color: #b9ada1ef;">  Sign up</a>
     here.
   </span>
-</div>
   </mat-card-actions>
 </mat-card>
 </body>

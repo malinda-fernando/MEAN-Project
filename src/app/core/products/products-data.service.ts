@@ -8,14 +8,11 @@ import { Product } from './product';
   providedIn: 'root'
 })
 export class ProductsDataService {
-
-  constructor(private $http: HttpClient) { }
+ constructor(private $http: HttpClient) {}
 
   getAllProducts(): Observable<Product[]> {
-    return this.$http.get
-    ('products.json')
-    .pipe(delay(2000)) as
-    Observable<
+    return this.$http.get('products.json').pipe(delay(2000)) as
+     Observable<
     Product[]
     >;
   }
