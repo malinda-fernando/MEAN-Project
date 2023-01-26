@@ -12,7 +12,9 @@
         <div fxShow="true" fxHide.lt-md="true">
           <span class="pm-title"> Sneaker-Store</span>
         <a mat-button class="prod-buttton"routerLink="/products"
-        routerLinkActive="active-link" >Products</a>
+        routerLinkActive="active-link" class="pro-fonts">
+        <mat-icon>store</mat-icon>      
+        Products</a>
       </div>
       <span class="header-spacer"></span>
         <a *ngIf="!user" mat-button routerLink="/auth"
