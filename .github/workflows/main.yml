@@ -25,7 +25,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            cd /root/lap-mart
+            cd /root/MEAN-Project
             git pull
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
