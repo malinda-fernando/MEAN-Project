@@ -11,14 +11,14 @@
         Products</a>
       </div>
       <span class="header-spacer"></span>
-        <a *ngIf="!user" mat-button routerLink="/auth"
+        <a *ngIf="!user" mat-button routerLink="/auth " class="pro-fonts"
         routerLinkActive="active-link" style="right: 2%; padding-left: 9px">
         <mat-icon>
           person_outliner
         </mat-icon>
         Login</a>
         <div style="right: 2%;">
-          <a mat-button *ngIf="user" [matMenuTriggerFor]="menu" >
+          <a mat-button *ngIf="user" [matMenuTriggerFor]="menu" class="pro-fonts" >
            <mat-icon>account_box</mat-icon>
   
            <span fxShow="true" fxHide.lt-md="true">{{user.fullname}}</span>
@@ -51,4 +51,4 @@
       </router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
-  </div>
+    </div>
